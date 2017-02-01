@@ -12,9 +12,13 @@
 		CE67E5A51E32D5CA008C4E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE67E5A31E32D5CA008C4E36 /* Main.storyboard */; };
 		CE67E5A71E32D5CA008C4E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE67E5A61E32D5CA008C4E36 /* Assets.xcassets */; };
 		CE67E5AA1E32D5CA008C4E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE67E5A81E32D5CA008C4E36 /* LaunchScreen.storyboard */; };
+		CE67E5B21E33223C008C4E36 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67E5B11E33223C008C4E36 /* GCDBlackBox.swift */; };
+		DE0A437AE4BA737D7D3C7342 /* Pods_Alamofire_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE34455CF31F6EF4ED30447 /* Pods_Alamofire_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B52A677323784968D60F210 /* Pods-Alamofire_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alamofire_test/Pods-Alamofire_test.release.xcconfig"; sourceTree = "<group>"; };
+		9AE34455CF31F6EF4ED30447 /* Pods_Alamofire_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE67E59C1E32D5CA008C4E36 /* Alamofire_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alamofire_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE67E59F1E32D5CA008C4E36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE67E5A11E32D5CA008C4E36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		CE67E5A61E32D5CA008C4E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE67E5A91E32D5CA008C4E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE67E5AB1E32D5CA008C4E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE67E5B11E33223C008C4E36 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		DF2AD748B1048B95879A1F59 /* Pods-Alamofire_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alamofire_test/Pods-Alamofire_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0A437AE4BA737D7D3C7342 /* Pods_Alamofire_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		716B7FCE19CB37E71EFE1B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AE34455CF31F6EF4ED30447 /* Pods_Alamofire_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE67E5931E32D5CA008C4E36 = {
 			isa = PBXGroup;
 			children = (
 				CE67E59E1E32D5CA008C4E36 /* Alamofire_test */,
 				CE67E59D1E32D5CA008C4E36 /* Products */,
+				D4CE0F15C604082FA47CE49E /* Pods */,
+				716B7FCE19CB37E71EFE1B3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				CE67E5A61E32D5CA008C4E36 /* Assets.xcassets */,
 				CE67E5A81E32D5CA008C4E36 /* LaunchScreen.storyboard */,
 				CE67E5AB1E32D5CA008C4E36 /* Info.plist */,
+				CE67E5B11E33223C008C4E36 /* GCDBlackBox.swift */,
 			);
 			path = Alamofire_test;
+			sourceTree = "<group>";
+		};
+		D4CE0F15C604082FA47CE49E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF2AD748B1048B95879A1F59 /* Pods-Alamofire_test.debug.xcconfig */,
+				5B52A677323784968D60F210 /* Pods-Alamofire_test.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE67E5AE1E32D5CA008C4E36 /* Build configuration list for PBXNativeTarget "Alamofire_test" */;
 			buildPhases = (
+				2095BEFA50D256F24CB0B0EE /* [CP] Check Pods Manifest.lock */,
 				CE67E5981E32D5CA008C4E36 /* Sources */,
 				CE67E5991E32D5CA008C4E36 /* Frameworks */,
 				CE67E59A1E32D5CA008C4E36 /* Resources */,
+				11BDBFC02F0604468A866316 /* [CP] Embed Pods Frameworks */,
+				0DC5A26F90979B86E4AA74D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DC5A26F90979B86E4AA74D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alamofire_test/Pods-Alamofire_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11BDBFC02F0604468A866316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alamofire_test/Pods-Alamofire_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2095BEFA50D256F24CB0B0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE67E5981E32D5CA008C4E36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE67E5A21E32D5CA008C4E36 /* ViewController.swift in Sources */,
+				CE67E5B21E33223C008C4E36 /* GCDBlackBox.swift in Sources */,
 				CE67E5A01E32D5CA008C4E36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +337,9 @@
 		};
 		CE67E5AF1E32D5CA008C4E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2AD748B1048B95879A1F59 /* Pods-Alamofire_test.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alamofire_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -270,7 +351,9 @@
 		};
 		CE67E5B01E32D5CA008C4E36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B52A677323784968D60F210 /* Pods-Alamofire_test.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alamofire_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -299,6 +382,7 @@
 				CE67E5B01E32D5CA008C4E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
